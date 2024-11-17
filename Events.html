@@ -20,18 +20,20 @@
             color: white;
             text-align: center;
             height: 100vh;
-            display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            background-size: cover;
+            display: flex;
+            justify-content: space-between;
         }
 
-        /* Top navigation bar styling */
+        /* Styling the navigation bar */
         .nav-bar {
             position: absolute;
             top: 20px;
             width: 100%;
             text-align: center;
+            z-index: 10;
         }
 
         .nav-bar a {
@@ -40,6 +42,7 @@
             text-decoration: none;
             font-size: 18px;
             position: relative;
+            transition: color 0.3s;
         }
 
         .nav-bar a.events {
@@ -51,16 +54,16 @@
             display: block;
             width: 100%;
             height: 2px;
-            background-color: #ff8686;
+            background-color: #7e7e7e;
             position: absolute;
             bottom: -3px;
             left: 0;
         }
 
         .nav-bar a:hover {
-            color: #fff;
+            color: #7e7e7e;
         }
-
+        
         /* Image slider styling */
         .slider-container {
             width: 90%;
@@ -150,7 +153,7 @@
     <!-- Top Navigation -->
     <div class="nav-bar">
         <a href="About.html" onclick="navigate('about')">ABOUT</a>
-        <a href="Gallery.html" onclick="navigate('gallery')">GAELLERY</a>
+        <a href="Gallery.html" onclick="navigate('gallery')">GALLERY</a>
         <a href="Events.html" class="events" onclick="navigate('events')">EVENTS</a>
         <a href="Contact.html" onclick="navigate('contact')">CONTACT</a>
     </div>
