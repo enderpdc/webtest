@@ -16,7 +16,7 @@
         /* Set dark background styling */
         body {
             background-color: #1e1e1e;
-            font-family: Arial, sans-serif;
+            font-family: "Times New Roman", serif;
             color: white;
             padding: 20px;
         }
@@ -84,7 +84,7 @@
 
         .bio-section h2 {
             font-size: 22px;
-            color: #ff8686;
+            color: #ffffff;
             margin-bottom: 10px;
         }
 
@@ -124,11 +124,6 @@
             /* Remove reverse layout for mobile */
             .bio-section .section.reverse {
                 flex-direction: column;
-            }
-
-            .bio-section img {
-                max-width: 80%;
-                margin-bottom: 20px;
             }
 
             .nav-bar a {
@@ -184,16 +179,15 @@
 <body>
     <!-- Top Navigation -->
     <div class="nav-bar">
-        <a href="About.html" class="about" onclick="navigate('about')">About</a>
-        <a href="Gallery.html" onclick="navigate('gallery')">Gallery</a>
-        <a href="Events.html" onclick="navigate('events')">Events</a>
-        <a href="Contact.html" onclick="navigate('contact')">Contact</a>
+        <a href="About.html" class="about" onclick="navigate('about')">ABOUT</a>
+        <a href="Gallery.html" onclick="navigate('gallery')">GALLERY</a>
+        <a href="Events.html" onclick="navigate('events')">EVENTS</a>
+        <a href="Contact.html" onclick="navigate('contact')">CONTACT</a>
     </div>
 
     <div class="bio-section">
         <!-- Introduction Section -->
         <div class="section">
-            <img src="images/img_modesto1.jpg" alt="Modesto Picci portrait">
             <div>
                 <h2>About Modesto Picci</h2>
                 <p>
@@ -207,8 +201,7 @@
         </div>
 
         <!-- Awards and Competitions Section (reverse layout) -->
-        <div class="section reverse">
-            <img src="images/img_modesto2.jpg" alt="Modesto Picci receiving an award">
+        <div class="section">
             <div>
                 <h2>Awards and Competitions</h2>
                 <p>
@@ -227,7 +220,6 @@
 
         <!-- Performances and Collaborations Section -->
         <div class="section">
-            <img src="images/img_modesto4.jpg" alt="Modesto Picci performing in concert">
             <div>
                 <h2>Performances and Collaborations</h2>
                 <p>
@@ -243,9 +235,7 @@
             </div>
         </div>
 
-        <!-- Soloist Appearances Section (reverse layout) -->
-        <div class="section reverse">
-            <img src="images/img_modesto3.jpg" alt="Modesto Picci performing in concert">
+        <div class="section">
             <div>
                 <h2>Soloist Appearances</h2>
                 <p>
