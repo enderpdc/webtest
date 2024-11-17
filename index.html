@@ -12,7 +12,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+    
         /* Set background image and styling */
         body {
             background: url('piano Home.jpg') no-repeat top center fixed;
@@ -22,44 +22,44 @@
             align-items: center;
             justify-content: space-between;
             height: 100vh;
-            font-family: Arial, sans-serif;
+            font-family: "Times New Roman", serif;
             color: white;
             text-align: center;
         }
-
+    
         /* Top navigation bar styling */
         .nav-bar {
             margin-top: 20px;
         }
-
+    
         .nav-bar a {
             margin: 0 15px;
             color: #ccc;
             text-decoration: none;
             font-size: 18px;
         }
-
+    
         .nav-bar a:hover {
             color: transparent;
         }
-
+    
         /* Bottom social media icons */
         .social-icons {
             margin-bottom: 80px;
         }
-
+    
         .social-icons a {
             margin: 0 15px;
             display: inline-block;
             width: 40px;
             height: 40px;
         }
-
+    
         .social-icons img {
             width: 100%;
             height: auto !important;
         }
-
+    
         /* Home button container */
         .home-button {
             position: fixed; /* Always visible */
@@ -75,20 +75,38 @@
             z-index: 9999; /* Ensures it appears above other elements */
             pointer-events: none; /* Prevents interference with layout */
         }
-
+    
         .home-button a {
             color: #ccc;
             text-decoration: none;
             font-size: 32px;
             pointer-events: auto; /* Enables clickability only on the icon */
         }
-
+    
         .home-button a:hover {
             color: #000;
         }
     </style>
+    
 </head>
 <body>
+    <!-- Top Navigation -->
+    <div class="nav-bar">
+        <a href="About.html" onclick="navigate('about')">ABOUT</a>
+        <a href="Gallery.html" onclick="navigate('gallery')">GALLERY</a>
+        <a href="Events.html" onclick="navigate('events')">EVENTS</a>
+        <a href="Contact.html" onclick="navigate('contact')">CONTACT</a>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="social-icons">
+        <a href="https://www.instagram.com/modesto_picci/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+        <a href="https://www.youtube.com/@modestopicci5456" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+        </a>
+    </div>
     <!-- Top Navigation -->
     <div class="nav-bar">
         <a href="About.html" onclick="navigate('about')">About</a>
